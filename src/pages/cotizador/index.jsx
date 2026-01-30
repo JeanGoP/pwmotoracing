@@ -54,6 +54,7 @@ export function Cotizador(){
                                 //   src="https://aburramotos.7-24.co/mercadeo/leads/iframe/2f4c07b6b8b5abfee7ed89cd0befe0dd/" 
                                 src={rutaIframe}
                                   name="myIFrame" 
+                                  allow="geolocation"
                                   className="iframe__row__Cotizador">
                           </iframe>  
                     </div>
