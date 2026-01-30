@@ -1,0 +1,74 @@
+
+.h2Blog{
+  display: block;
+  font-size: clamp(28px, 9vw, 40px);
+  font-weight: 600;
+
+  font-family: "Saira Semi Condensed", Sans-serif;
+}
+
+.contenidoBlogTemp{
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+.nota-moto {
+  padding: 60px 20px;
+}
+
+.containerblog {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.titulo {
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  font-family: "avalonn", Sans-serif;
+}
+
+.imagen-principal {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.imagen-principal img {
+  max-width: 100%;
+  height: auto;
+}
+.contenidoBlogTemp p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  color: #9a9a9a;
+}
+
+.contenidoBlogTemp h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #9a9a9a;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.cita {
+  font-style: italic;
+  color: #9a9a9a;
+}
+.resaltado {
+  color:#c36;
+  font-weight: bold;
+}
+.ulblog {
+  padding-left: 20px;
+}
+
+.ulblog li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #9a9a9a;
+}

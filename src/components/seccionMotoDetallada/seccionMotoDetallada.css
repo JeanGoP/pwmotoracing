@@ -1,0 +1,182 @@
+.contenido__seccionMotoDetallada{
+    margin-top: 40px;
+    
+}
+.titulo__seccionMotoDetallada{
+    /* color: white; */
+    font-size: 25px;
+    font-family: "Roboto", Sans-serif;
+    font-weight: 300;
+}
+.subtitulo_seccionModoDetallada{
+    /* color: white; */
+    font-size: 70px;
+    font-weight: 300;
+    font-family: "Bebas Neue", Sans-serif;
+}
+.descripcion__seccionMotoDetallada{
+    /* color: rgb(164, 162, 162); */
+    font-size: 15px;
+    text-align: justify;
+}
+
+.descripcion__seccionMotoDetallada{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.card__SeccionMotoDetallada { 
+    border: none;
+    width: 100%;
+    height: 100%;
+    display: flex;               
+    justify-content: center;    
+    align-items: center;  
+    overflow: hidden;      
+}
+@media (max-width: 768px) {
+    .card__SeccionMotoDetallada { 
+        border: none;
+        width: 100%;
+        height: 100%;
+        display: flex;               
+        justify-content: center;    
+        align-items: center;    
+        position: relative;
+        left: 13px;    
+    }
+  }
+  
+.imagen__seccionMotoDetallada {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.4s ease;    
+    border-radius: 15px;
+}
+.card__SeccionMotoDetallada:hover .imagen__seccionMotoDetallada {
+    transform: scale(1.08);
+    filter: brightness(1.05);
+  }
+
+.footer__descripcion__seccionMotoDetallada{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.footer__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+.footer__label__seccionMotoDetallada{
+    color: #ffffff;
+    font-size: clamp(1rem, 2vw, 1rem);
+    font-weight: 600;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    font-family: "Saira Semi Condensed", Sans-serif;
+  
+}
+.footer__p__seccionMotoDetallada{
+    font-size: clamp(1rem, 3vw, 1rem);
+    font-weight: 700;
+    color: #ffffff;
+    font-family: "Saira Semi Condensed", Sans-serif;
+    margin: 0;
+}
+.footer__div__seccionDetallada{
+    border-bottom: 1px solid #FFFF;
+    padding-bottom: 15px;
+   
+}
+.footer__div__seccionDetallada-{
+    border-bottom: 1px solid #FFFF;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+   
+}
+
+.contenidoTituloMoto{
+    justify-content: center;    
+    align-items: center;   
+    text-align: center;
+}
+.pContenidoTituloM{
+    font-family: "Monrope", Sans-serif;
+    font-size:  clamp(2.6rem, 5vw, 3.4rem);
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.tituloseccionDetalle{
+    font-family: "Saira Semi Condensed", Sans-serif;
+    font-size:  clamp(1.1rem, 5vw, 1.9rem);
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.detalleseccionMoto{
+    font-family: "Saira Semi Condensed", Sans-serif;
+    font-size:  clamp(1rem, 4vw, 1.1rem);
+    color: #FFFFFF;
+    padding-left: 40px;
+    padding-right: 40px;
+   
+}
+
+.tituloseccionDetalleVisit{
+    font-family: "Saira Semi Condensed", Sans-serif;
+    font-size:  clamp(1.9rem, 5vw, 2.7rem);
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.btn-cotizar {
+
+    background-color: #06013D;
+    border: none;
+    font-family: "Saira Semi Condensed", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 150px;
+  }
+
+  
+  .btn-cotizar:hover {
+    transform:  scale(1.05);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    background-color: #003F74;
+    border: none;
+  }
+
+  .tituloAKT{
+    font-family: "Saira Semi Condensed", Sans-serif;
+    font-size:  clamp(2.6rem, 5vw, 4rem);
+    color: #FFFFFF;
+    font-weight: 500;
+  }
+
+  .subtituloAKT{
+    font-family: "Saira Semi Condensed", Sans-serif;
+    font-size:  clamp(2.2rem, 5vw, 2.7rem);
+    color: #FFFFFF;
+    font-weight: 500;
+  }
+
+  .titulo_inicialAKT{
+    font-family: "Saira Semi Condensed", Sans-serif;
+    font-size:  clamp(1rem, 3vw, 1.1rem);
+    color:#D8D8D8;
+    font-weight: 300;
+  }
+
+  .descripcionAKT{
+    font-family: "Saira Semi Condensed", Sans-serif;
+    font-size:  clamp(1rem, 3vw, 1.1rem);
+    color: #FFFFFF;
+
+  }
