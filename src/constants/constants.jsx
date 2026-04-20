@@ -38,28 +38,28 @@ export const ciudadModal = [
 
 export const jsonCardTecnologia = [
   {
-    titulo: 'TECNOLOGÍA DTS - i',
+    titulo: 'Agenda tu cita de taller',
     texto:
-      'Nuestra tecnología patentada DTS-i de encendido digital de doble o triple chispa mejora el rendimiento del combustible, agregando potencia y mejorando el kilometraje para satisfacer todas las necesidades de conducción, tanto en ciudades como en carreteras.',
-    imagen: '/images/card.jpg',
+      'Programa fácilmente el mantenimiento o revisión de tu motocicleta con técnicos especializados y repuestos originales para garantizar su mejor rendimiento.',
+    imagen: '/images/tecnologia/Agendacita.jpeg',
   },
   {
-    titulo: 'EXHAUSTEC',
+    titulo: 'Campañas de seguridad',
     texto:
-      'El diseño inteligente de la cámara de expansión ExhausTEC que amplifica significativamente el torque, obteniendo un mejor rendimiento de combustible en la conducción diaria, ya sea de baja o media intensidad. Un atributo muy apreciado por motociclistas en todo el mundo.',
-    imagen: '/images/card2.jpg',
+      'Consulta las campañas activas para revisiones técnicas y mejoras que aseguran el correcto funcionamiento de tu motocicleta.',
+    imagen: '/images/tecnologia/seguridad.jpeg',
   },
   {
-    titulo: 'SUSPENSIÓN SNS',
+    titulo: 'Manuales y garantías',
     texto:
-      'El equipo de suspensión SNS (resorte en resorte) patentado por Bajaj, está diseñado para garantizar una comodidad superior. De la misma manera optimiza el equilibrio, reduce el encendido prematuro y ofrece mayor estabilidad en la conducción en ciudad y carreteras.',
-    imagen: '/images/card3.jpg',
+      'Accede a información clave sobre el uso, mantenimiento y condiciones de garantía de tu motocicleta en cualquier momento.',
+    imagen: '/images/tecnologia/Manuales.jpeg',
   },
   {
-    titulo: 'TECNOLOGÍA DE 4 VÁLVULAS',
+    titulo: 'Red de servicio y repuestos',
     texto:
-      'Nuestra tecnología de 4 válvulas mejora la capacidad del motor y aumenta su potencia, manteniéndolo así en óptimas condiciones por más tiempo, lo que representa mayor durabilidad para los motociclistas en todo el mundo.',
-    imagen: '/images/card4.jpg',
+      'Cuenta con una amplia cobertura de talleres autorizados y disponibilidad de repuestos originales a nivel nacional para soporte continuo.',
+    imagen: '/images/tecnologia/repuestos.jpeg',
   },
 ];
 
@@ -166,22 +166,19 @@ export const jsonLinkMarcas = [
 
 export const jsonAliadosFinancieros = [
   {
-    url: '/images/aliadoSufi.png',
+    url: '/images/BancodeBogota.jpg',
   },
   {
-    url: '/images/aliadosDavivienda.png',
+    url: '/images/Sufi.jpg',
   },
   {
-    url: '/images/aliadoProgreser.png',
+    url: '/images/Addi.jpg',
   },
   {
-    url: '/images/aliadosCredicol.png',
+    url: '/images/CrediOrbe.jpg',
   },
   {
-    url: '/images/aliadosExito77.png',
-  },
-  {
-    url: '/images/aliadoBancoBogota.jpg',
+    url: '/images/ProgreSer.jpg',
   }
 ];
 

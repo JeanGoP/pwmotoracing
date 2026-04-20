@@ -26,7 +26,7 @@ function Carousel({img =''}){
   }));
 
   if (slides.length === 0) {
-    return <p>Cargando imágenes...</p>;
+    return <p></p>;
   }
   const handlePagina = () => {
     const element = document.getElementById("contenidoMotocicleta");

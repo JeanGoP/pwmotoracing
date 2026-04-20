@@ -52,35 +52,47 @@ export function Home() {
 
   const jsonItemsTecnicos = [
     {
-      titulo: 'Torque(Nm)',
+      titulo: 'Cilindraje',
       // descripcion: configuracionData?.arranqueMoto_2 || '',
-      descripcion: '15.5 Nm @ 7.500 RPM'
+      descripcion: '197 cc'
+    },
+    {
+      titulo: 'Potencia',
+      //descripcion: configuracionData?.torqueMoto_2 || '',
+      descripcion: '16.5 HP'
+    },
+    {
+      titulo: 'Torque',
+      //descripcion: configuracionData?.bateriaMoto_2 || '',
+      descripcion: '15.5 Nm'
     },
     {
       titulo: 'Caja',
-      //descripcion: configuracionData?.torqueMoto_2 || '',
-      descripcion: '6 velocidades'
-    },
-    {
-      titulo: 'Arranque',
-      //descripcion: configuracionData?.bateriaMoto_2 || '',
-      descripcion: 'Eléctrico'
-    },
-    {
-      titulo: 'Freno Delantero',
       //descripcion: configuracionData?.transmisionMoto_2 || '',
-      descripcion: 'Disco 272 mm,pinza 2 pistones'
+      descripcion: '6 velocidades'
     },
 
     {
-      titulo: 'Freno Trasero',
+      titulo: 'Peso',
       // descripcion: configuracionData?.pesoMoto_2 || '',
-      descripcion: 'Disco 230 mm'
+      descripcion: '120 Kg'
     },
     {
-      titulo: 'Suspensión Delantera',
+      titulo: 'Suspensión',
       //descripcion: configuracionData?.tanqueMoto_2 || '',
-      descripcion: 'Telescópica Hidráulica'
+      descripcion: 'telescópica (delantera) + monoshock (trasera)'
+    }
+    ,
+    {
+      titulo: 'Frenos',
+      //descripcion: configuracionData?.tanqueMoto_2 || '',
+      descripcion: 'disco delantero y trasero'
+    }
+    ,
+    {
+      titulo: 'Tanque',
+      //descripcion: configuracionData?.tanqueMoto_2 || '',
+      descripcion: '3.17 galones'
     }
   ];
 
@@ -120,27 +132,46 @@ export function Home() {
       <div>
         <div style={{ background: "#000000" }}>
           <div className='container-fluid'>
-            <div className="row div__padding__centro " style={{ position: 'relative' , paddingBottom:'180px'}}>
+            <div className="row div__padding__centro " style={{ position: 'relative' , paddingBottom:'130px'}}>
               {/* {jsonSeccionMotoDetallada.map((item, idx) => ( */}
               <SeccionMotoDetallada
                 key="UYTZ"
-                ImagenMoto="/images/TTrmotoseccion.png.webp"
-                Titulo='AKT 200 TTR'
+                ImagenMoto="/images/TT200 2.png"
+                Titulo='AKT TT200'
                 Subtitulo='Tú elige el plan, nosotros tenemos las TT'
-                Descripcion_1='La TTR 200 es una moto enduro para todo tipo de terrenos, diseñada para que día a día vivas una aventura diferente sin límites rodando en la enduro más completa del mercado. Única motocicleta en esta categoría con un motor de 197.3 cc, 6 cambios y un sistema de frenos de disco en ambas ruedas.'
+                Descripcion_1='La TT200 es una moto doble propósito (on/off) pensada para aventura, con un diseño tipo rally, postura cómoda y buena resistencia para ciudad y terrenos destapados.'
                 Descripcion_2={descripcion2}
                 // Transmision={configuracionData?.transmisionMoto_1 || ''}
                 // Cilindraje={configuracionData?.cilindrajeMoto_1 || ''}
                 // Motor={configuracionData?.motorMoto_1 || ''}
                 Transmision='120 KG'
-                Motor='16.5 HP @8500 RPM'
+                Motor='16.5 HP'
                 Cilindraje='197 CC'
                 ColorTitulo={configuracionData?.colorTituloHome || ''}
                 ColorCuerpo={configuracionData?.colorCuerpo || ''}
               />
               {/* ))} */}
             </div>
+
+            <section className="row contenido__label__Especificacion text-center">
+              <label className="EspecificacionesTecnicas__Titulo__Home" style={{ color: 'white' }}>
+                ESPECIFICACIONES TÉCNICAS
+              </label>
+            </section>
+
+            <div className="row g-4 mb-5" style={{paddingBottom:'100px'}}>
+              {jsonItemsTecnicos.map((item, idx) => (
+                <DescripcionSeccionBarraPorcentaje
+                  key={item.titulo || idx}
+                  Titulo={item.titulo}
+                  Descripcion={item.descripcion}
+                  ColorCuerpo={configuracionData?.colorCuerpo}
+                />
+              ))}
+            </div>
           </div>
+
+
         </div>
 
         <div style={{ background: "white" }}>
@@ -152,57 +183,22 @@ export function Home() {
           </div>
         </div>
         <div style={{ background: "#000", paddingBottom: '15px' }}>
-          <div className='container'>
-            <div className="row align-items-center mb-5">
-              <div className="col-lg-6 col-md-6 col-sm-12 mb-4 mb-md-0">
-                <img src="/images/cr4motocicleta.jpg" alt="Moto CR4" className="img-fluid " style={{ width: '100%', height: 'auto' }} />
-              </div>
+          <div className='container-fluid'>
 
-              <div className="col-lg-6 col-md-6 col-sm-12">
-                <TituloSeccionBarraPorcentaje
-                  Titulo='Deportiva'
-                  Subtitulo='AKT CR4 200 Pro'
-                  // ColorSubtiutlo={configuracionData?.colorTituloHome || ''}
-                  // ColorCuerpo={configuracionData?.colorCuerpo || ''}
-                  colorCuerpo='#d8d8d8'
-                  ColorSubtiutlo='#d8d8d8'
-                  detalle='Nos enorgullece presentar la nueva AK CR4 200 PRO, una naked de aspecto imponente y robusto con un diseño que no pasa desapercibido; un motor probado por la experiencia y detalles que la harán deseable por el público que busca economía sin dejar de lado el diseño y rendimiento.'
-                />
-
-                <div className="row gy-3">
-                  {/* {jsonSeccionBarraPorcentaje.map((item, idx) => ( */}
-                  <SeccionBarraPorcentaje
-                    key="PNTY"
-                    Motor='RE 4 Tiempos SOHC'
-                    Cilindraje='197 cc'
-                    potencia='16.5 Hp @ 8.000 RPM'
-                    // ColorCuerpo={configuracionData?.colorCuerpo || ''}
-                    ColorCuerpo='#d8d8d8'
+          <div className="row g-4" style={{paddingTop:'50px', paddingBottom:'50px'}}>
+                {jsonCardTecnologia.map((item, idx) => (
+                  <CardTecnologia
+                    key={item.id || idx}
+                    Titulo={item.titulo}
+                    Texto={item.texto}
+                    Imagen={item.imagen}
+                    // Color={configuracionData?.colorCuerpo}
+                    Color={'#0e60ad'}
+                    // ColorFondo={configuracionData?.colorPagina}
+                    ColorFondo={'#eeeeee'}
                   />
-                  {/* ))} */}
-                </div>
+                ))}
               </div>
-            </div>
-
-            <section className="row contenido__label__Especificacion text-center my-5">
-              {/* <label className="EspecificacionesTecnicas__Titulo__Home" style={{ color: configuracionData?.colorCuerpo }}> */}
-              <label className="EspecificacionesTecnicas__Titulo__Home" style={{ color: '#d8d8d8' }}>
-                ESPECIFICACIONES TÉCNICAS
-              </label>
-            </section>
-
-            <div className="row g-4 mb-5">
-              {jsonItemsTecnicos.map((item, idx) => (
-                <DescripcionSeccionBarraPorcentaje
-                  key={item.titulo || idx}
-                  Titulo={item.titulo}
-                  Descripcion={item.descripcion}
-                  // ColorCuerpo={configuracionData?.colorCuerpo}
-                  ColorCuerpo='#d8d8d8'
-                />
-              ))}
-            </div>
-
 
           </div>
 
