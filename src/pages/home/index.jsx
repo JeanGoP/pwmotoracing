@@ -30,6 +30,7 @@ import CardMarcaMoto from '../../components/cardMarcaMoto';
 import { backgroundImages } from 'polished';
 import CardBlog from '../../components/cardBlog';
 import { useNavigate } from 'react-router-dom';
+import MotoDescripcion from '../../components/descripcionmoto';
 
 export function Home() {
   const NIT = import.meta.env.VITE_API_NIT_EMPRESA;
@@ -96,6 +97,16 @@ export function Home() {
     }
   ];
 
+  const data_2 = [
+    {
+      titulo: "Diseño robusto con estilo rally y cúpula contra el viento",
+      descripcion: "",
+      imagen: "/images/TT200CONABS.jpeg"
+    },
+    { titulo: "Iluminación full LED" },
+    { titulo: "Posición de manejo erguida (más cómoda en viajes largos)" },
+    { titulo: "Motor monocilíndrico eficiente para distintos terrenos" }
+  ];
   const scrollToCatalogoMoto = () => {
     const section = document.getElementById("contenidoMotocicleta");
     if (section) {
@@ -159,7 +170,7 @@ export function Home() {
               </label>
             </section>
 
-            <div className="row g-4 mb-5" style={{paddingBottom:'100px'}}>
+            <div className="row g-4 mb-5" style={{paddingBottom:'10px'}}>
               {jsonItemsTecnicos.map((item, idx) => (
                 <DescripcionSeccionBarraPorcentaje
                   key={item.titulo || idx}
@@ -171,7 +182,11 @@ export function Home() {
             </div>
           </div>
 
-
+          <div className="container-fluid">
+            <div style={{paddingBottom:'100px'}}>
+            <MotoDescripcion data={data_2} urlimag='/images/TT200CONABS.jpeg' op='2'/>
+          </div>
+        </div>
         </div>
 
         <div style={{ background: "white" }}>
@@ -212,6 +227,7 @@ export function Home() {
         {/* </main> */}
 
         <div className='' style={{ background: '#000' }} >
+
           <main className="container" style={{ padding: '1px' }}>
             <section className="row contenido__label__Especificacion text-center my-5 m-3">
               <label className="NuestraAliado__Titulo__Home" style={{ color: '#fff', paddingBottom: '20px' }}>
